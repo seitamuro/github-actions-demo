@@ -1,0 +1,9 @@
+name: "use custom actions example"
+run-name: "use ustom actions example"
+on: [push]
+jobs:
+  Use-Custom-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "call custom actions"
+        uses: ./.github/actions/inputs-and-outputs

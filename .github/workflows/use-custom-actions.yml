@@ -5,5 +5,7 @@ jobs:
   Use-Custom-Actions:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
       - name: "call custom actions"
         uses: ./.github/actions/inputs-and-outputs

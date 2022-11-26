@@ -1,12 +1,13 @@
-name: "Inputs and Outputs"
-
-description: "Test of inputs and outputs"
-
+name: "Hello World"
+description: "Greet someone and record the time"
 inputs:
-  file-path:
-    description: "Path to input file"
+  who-to-greet:
+    description: "Who to greet"
     required: true
-    default: "test-file.js"
+    default: "World"
 outputs:
-  results-file:
-    description: "Path to output file"
+  time:
+    description: "The time we greeted you"
+runs:
+  using: "node16"
+  main: "index.js"
